@@ -12,7 +12,13 @@ export default function(state = initialState, action){
             return {
                 ...state,
                 items : action.payload 
-            }
+            };
+        case NEW_POST : 
+        // console.log("Fetcing in the postReducer.js .....")
+            return {
+                ...state,
+                items : action.addNew 
+            };
         default:
             return state;
     }

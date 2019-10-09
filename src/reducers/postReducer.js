@@ -17,7 +17,7 @@ export default function(state = initialState, action){
         // console.log("Fetcing in the postReducer.js .....")
             return {
                 ...state,
-                items : action.addNew 
+                item : action.addNew 
             };
         default:
             return state;
